@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" type="module"></script>
-</head>
-<body>
-  <div class="world" data-world>
-    <div class="score" data-score>0</div>
-    <div class="start-screen" data-start-screen>Press Any Key To Start</div>
-    <img src="imgs/ground.png" class="ground" data-ground>
-    <img src="imgs/ground.png" class="ground" data-ground>
-    <img src="imgs/dino-stationary.png" class="dino" data-dino>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="game">
+      <div class="world" data-world>
+        <div class="score" data-score>0</div>
+        <div class="start-screen" data-start-screen>Press Any Key To Start</div>
+        <img src="imgs/ground.png" class="ground" data-ground />
+        <img src="imgs/ground.png" class="ground" data-ground />
+        <img src="imgs/dino-stationary.png" class="dino" data-dino />
+      </div>
+      <div class="web3 mt-5 text-center">
+        <button type="button" class="btn btn-success mb-3">
+          Connect your wallet!
+        </button>
+        <div class="startTheGame">
+          <button type="button" class="btn btn-danger">
+            Start with paying ETH
+          </button>
+          <button type="button" class="btn btn-warning">
+            Start with your NFT
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

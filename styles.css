@@ -11,6 +11,12 @@ body {
   min-height: 100vh;
 }
 
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .world {
   overflow: hidden;
   position: relative;
